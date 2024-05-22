@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@drawable/gaming_bg2">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIC TAC TOE"
+        android:fontFamily="@font/pdark"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="5dp"
+        android:text="Play"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/two_p"
+        android:fontFamily="@font/techno_race"
+        android:paddingLeft="60dp"
+        android:paddingRight="55dp"
+        android:textSize="28dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/tournament_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:text="Tournament"-->
+<!--        android:fontFamily="@font/technoRace"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="28dp"-->
+<!--        android:drawableStart="@drawable/trophy"-->
+<!--        android:paddingLeft="60dp"-->
+<!--        android:paddingRight="55dp"-->
+<!--        android:layout_marginVertical="5dp"-->
+<!--        android:layout_below="@id/play_button"-->
+<!--        android:layout_marginHorizontal="30dp"-->
+<!--        android:background="@drawable/button_bg"-->
+<!--        android:textAllCaps="false"-->
+<!--        />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageButton
+            android:id="@+id/sound_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circular_button_bg"
+
+            />
+        <ImageButton
+            android:id="@+id/music_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+
+            android:background="@drawable/circular_button_bg"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

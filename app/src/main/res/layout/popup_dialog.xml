@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#AA171717">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:background="@drawable/popup_bg"
+
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/waves"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/waves"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/waves_bg"
+            />
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/player_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Player"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/waves"/>
+        <ImageView
+            android:id="@+id/winner_svg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/player_text"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/winning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="won the match"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/winner_svg"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@id/winning_text"
+            android:layout_margin="15dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rematch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="7dp"
+                android:text="rematch"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:background="@drawable/button_bg"
+                android:layout_weight="1"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back_to_home"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/rematch"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+                android:background="@drawable/button_bg"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
